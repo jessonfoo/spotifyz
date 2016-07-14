@@ -5,7 +5,7 @@ var cookieParser = require('cookie-parser');
 
 var client_id = '583cbfe0843a4392ae8af9bbe87acf2b'; // client id
 var client_secret = 'ef3f8e246edf4a16bea4e1297c87f883'; // Your secret
-var redirect_uri = 'http://localhost:8888/callback'; // Your redirect uri
+var redirect_uri = 'http://spotifyzer.herokuapp.com/callback'; // Your redirect uri
 
 /**
  * Generates a random string containing numbers and letters
@@ -132,5 +132,5 @@ app.get('/refresh_token', function(req, res) {
   });
 });
 
-console.log('Listening on 8888');
-app.listen(8888);
+console.log('Listening on 80');
+app.listen(80);
